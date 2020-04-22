@@ -9,9 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-parameters:
-  param : ["test1", "test2"]
-
 steps:
-  - ${{each filename in parameters.param}}
-    - scripts: 'echo ${{ filename  }}'
+ - template: subscriptions.yaml
+   parameters:
+     param: ["filaname1","filaname2","filaname3"]
