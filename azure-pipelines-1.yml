@@ -10,6 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
- - template: subscriptions.yaml
+ - template: subscriptions.yml
    parameters:
      param: ["filaname1","filaname2","filaname3"]
